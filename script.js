@@ -1,14 +1,14 @@
 const usuario = { nome: "João Lucena", matricula: "386", pendencia: false, acessibilidade: true };
 
 const armarios = [
-  { id: 1, formato: "padrao", status: true, acessivel: false },
-  { id: 2, formato: "padrao", status: true, acessivel: false },
-  { id: 3, formato: "padrao", status: true, acessivel: false },
-  { id: 4, formato: "padrao", status: false, acessivel: true },
-  { id: 5, formato: "padrao", status: false, acessivel: true },
-  { id: 6, formato: "duplo", status: true, acessivel: true },
-  { id: 7, formato: "duplo", status: false, acessivel: true },
-  { id: 8, formato: "duplo", status: false, acessivel: true },
+  { id: 1, formato: "padrao", status: true, acessivel: false, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 2, formato: "padrao", status: true, acessivel: false, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 3, formato: "padrao", status: true, acessivel: false, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 4, formato: "padrao", status: false, acessivel: true, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 5, formato: "padrao", status: false, acessivel: true, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 6, formato: "duplo", status: true, acessivel: true, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 7, formato: "duplo", status: false, acessivel: true, horarioReserva: "", horarioEntregaChave: "" },
+  { id: 8, formato: "duplo", status: false, acessivel: true, horarioReserva: "", horarioEntregaChave: "" },
 ];
 
 function reservarArmario() {
@@ -16,8 +16,8 @@ function reservarArmario() {
 
   let armariosDisponiveis = armarios.filter((armario) => {
     return armario.formato === tipoSelecionado 
-          && a.status 
-          && usuario.acessibilidade === a.acessivel
+          && armario.status 
+          && usuario.acessibilidade === armario.acessivel
   })
 
   if (armariosDisponiveis.length === 0) {
@@ -26,9 +26,16 @@ function reservarArmario() {
   }
 
   let armarioSorteado = armariosDisponiveis[Math.floor(Math.random() * armariosDisponiveis.length)];
-  let armarioEmprestado = armarios.find(armario => armario.id === armarioSorteado.id).status = false;
+  let armarioEmprestado = armarios.find(armario => armario.id === armarioSorteado.id);
+
+  const horario_reserva = new Date()
+
+  armarioEmprestado.status = false;
+  armarioEmprestado.horarioReserva = horario_reserva.toLocaleString();
+  armarioEmprestado.horarioEntregaChave = new Date(horario_reserva.getTime() + 24 * 60 * 60 * 1000).toLocaleString();
 
   usuario.pendencia = true;
 
   document.getElementById("resultado").innerText = `Olá, ${usuario.nome}! O armário ${armarioSorteado.id} foi reservado com sucesso!`;
+  document.getElementById("resultado").innerText += `\nHorário de entrega da chave: ${armarioEmprestado.horarioEntregaChave}`;
 }
