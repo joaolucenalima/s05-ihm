@@ -3,7 +3,7 @@
 Cada uma das entregas está separadas dentro de uma pasta do repositório:
 
 ## Etapa 1
-Acesse: [Etapa 1](https://joaolucena.github.io/s05-ihm)
+Acesse: [Etapa 1](https://joaolucenalima.github.io/s05-ihm/)
 
 ## Etapa 2
-Acesse: [Grid e Responsividade](https://joaolucena.github.io/s05-ihm/etapa-2)
+Acesse: [Grid e Responsividade](https://joaolucenalima.github.io/s05-ihm/etapa-2/)
