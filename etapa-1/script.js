@@ -36,6 +36,6 @@ function reservarArmario() {
 
   usuario.pendencia = true;
 
-  document.getElementById("resultado").innerText = `Olá, ${usuario.nome}! O armário ${armarioSorteado.id} foi reservado com sucesso!`;
-  document.getElementById("resultado").innerText += `\nHorário de entrega da chave: ${armarioEmprestado.horarioEntregaChave}`;
+  document.getElementById("resultado").innerText = `Olá, ${usuario.nome}! O armário ${armarioSorteado.id} foi reservado com sucesso!
+    Horário de entrega da chave: ${armarioEmprestado.horarioEntregaChave}`;
 }
