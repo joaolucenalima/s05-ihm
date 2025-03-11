@@ -7,3 +7,6 @@ Acesse: [Etapa 1](https://joaolucenalima.github.io/s05-ihm/)
 
 ## Etapa 2
 Acesse: [Grid e Responsividade](https://joaolucenalima.github.io/s05-ihm/etapa-2/)
+
+## Etapa 3
+Acesse: [Cores, Tipografia e Ícones](https://joaolucenalima.github.io/s05-ihm/etapa-3/)
