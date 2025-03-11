@@ -12,9 +12,7 @@ closeDialogButton.addEventListener('click', () => {
 
 window.onload = () => {
   const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    document.body.classList.add(savedTheme);
-  }
+  document.body.classList.add(savedTheme ?? "inatel");
 }
 
 const inatel_theme = document.querySelector('#inatel_theme');
