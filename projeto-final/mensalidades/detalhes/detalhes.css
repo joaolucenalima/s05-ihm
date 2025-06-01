@@ -1,0 +1,77 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.monthly_payment_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.payment_methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.payment_method_container {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+
+  div {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--border-color);
+  }
+
+  >* {
+    padding: 0.5rem 2rem;
+  }
+}
+
+.download_receipt_button {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+}
+
+.rate_warn {
+  color: rgb(255, 27, 27)
+}
+
+.payment_success {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+
+  svg {
+    width: 150px;
+    height: 150px;
+    color: #28a745;
+    margin-bottom: 1rem;
+  }
+}

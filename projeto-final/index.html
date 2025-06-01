@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Projeto final</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="open_dialog_icon">
+        <i data-lucide="menu"></i>
+      </div>
+      <h1>Inatel</h1>
+      <i data-lucide="bell"></i>
+    </header>
+
+    <dialog>
+      <button id="close_dialog_button">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="dialog_content">
+        <button class="change_theme_button" id="inatel_theme">Inatel Theme</button>
+        <button class="change_theme_button" id="dark_theme">Dark Theme</button>
+      </div>
+    </dialog>
+
+    <main>
+      <section class="messages">
+        <h2>Olá, João Vitor</h2>
+
+        <ul class="messages_list">
+          <li>
+            <i data-lucide="chevron-right"></i>
+            Você possui um ármario reservado com entrega para hoje.
+          </li>
+
+          <li>
+            <i data-lucide="chevron-right"></i>
+            Você possui uma pendência de R$3,70 na tesouraria.
+          </li>
+        </ul>
+      </section>
+
+      <section class="payments">
+        <h2>Mensalidades</h2>
+
+        <div class="monthly_payments_container">
+          <!-- Rendered by js -->
+        </div>
+
+        <a href="/projeto-final/mensalidades/">Ver mais</a>
+      </section>
+
+      <section class="classes">
+        <div class="classroom">
+          <div class="classroom_info">
+            <h4 class="class_name">S05</h4>
+            <p class="class_schedule">Sala 17 - Quarta 17h30</p>
+          </div>
+
+          <div class="classroom_actions">
+            <i data-lucide="calendar"></i>
+            <i data-lucide="x"></i>
+            <i data-lucide="chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="classroom">
+          <div class="classroom_info">
+            <h4 class="class_name">C11</h4>
+            <p class="class_schedule">Sala 04 - Quarta 19h30</p>
+          </div>
+
+          <div class="classroom_actions">
+            <i data-lucide="calendar"></i>
+            <i data-lucide="x"></i>
+            <i data-lucide="chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="classroom">
+          <div class="classroom_info">
+            <h4 class="class_name">F03</h4>
+            <p class="class_schedule">Sala 09 - Quinta 21h30</p>
+          </div>
+
+          <div class="classroom_actions">
+            <i data-lucide="calendar"></i>
+            <i data-lucide="x"></i>
+            <i data-lucide="chevron-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel-container">
+        <div id="carousel"></div>
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+      </section>
+    </main>
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

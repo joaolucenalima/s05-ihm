@@ -16,3 +16,6 @@ Acesse: [Imagens e Vídeos](https://joaolucenalima.github.io/s05-ihm/etapa-4/)
 
 ## Etapa 5
 Acesse: [Interação e animação](https://joaolucenalima.github.io/s05-ihm/etapa-5/)
+
+## Projeto Final
+Acesse: [Projeto Final](https://joaolucenalima.github.io/s05-ihm/projeto-final/)
